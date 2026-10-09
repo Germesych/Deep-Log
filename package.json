@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "oxc-parser": "^0.153.0",
-    "unplugin": "^3.4.0"
+    "typescript": "^7.0.2",
+    "unplugin": "^3.4.0",
+    "vue-tsc": "^3.3.12"
   }
 }

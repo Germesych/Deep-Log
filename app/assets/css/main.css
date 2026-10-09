@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+    --font-sans:
+        ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono:
+        ui-monospace, "JetBrains Mono", "Cascadia Code", Menlo, Consolas,
+        monospace;
+
+    --color-abyss-950: #04070d;
+    --color-abyss-900: #070c16;
+    --color-abyss-850: #0b1220;
+    --color-abyss-800: #101a2e;
+    --color-abyss-700: #1a2a45;
+
+    --color-ocean-300: #7dd3fc;
+    --color-ocean-400: #38bdf8;
+    --color-ocean-500: #0ea5e9;
+    --color-ocean-600: #0284c7;
+
+    --color-foam-100: #e6edf6;
+    --color-foam-300: #b6c4d8;
+    --color-foam-500: #7e93b0;
+
+    --color-kelp-400: #34d399;
+    --color-coral-400: #fb7185;
+    --color-lantern-400: #fbbf24;
+}
+
+@layer base {
+    html {
+        color-scheme: dark;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-abyss-950 font-sans text-foam-100 antialiased;
+    }
+
+    ::selection {
+        @apply bg-ocean-500/40 text-foam-100;
+    }
+
+    [id] {
+        scroll-margin-top: 5.5rem;
+    }
+}

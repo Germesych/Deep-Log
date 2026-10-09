@@ -1,9 +1,9 @@
 <template>
-    <div class="min-h-screen">
-        <header>header</header>
-        <main>
+    <div id="top" class="flex min-h-screen flex-col">
+        <SiteHeader />
+        <main id="content" class="mx-auto w-full max-w-6xl flex-1 px-4 py-10">
             <slot />
         </main>
-        <footer>footer</footer>
+        <SiteFooter />
     </div>
 </template>
